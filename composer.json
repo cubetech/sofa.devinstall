@@ -34,7 +34,7 @@
     "test": [
       "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
     ],
-    "post-install-cmd": [
+    "post-create-project-cmd": [
 	  "/bin/bash cubetech.sh"
 	]
   }
