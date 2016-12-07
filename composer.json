@@ -29,6 +29,6 @@
   "require": {
     "php": ">=5.6",
     "wp-cli/wp-cli": "1.0.0",
-    "cubetech/sofa": ">=1.8.1"
+    "cubetech/sofa": "*"
   }
 }
