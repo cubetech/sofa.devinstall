@@ -1,0 +1,41 @@
+{
+  "name": "cubetech/sofa.devinstall",
+  "type": "project",
+  "license": "MIT",
+  "description": "Install package for the cubetech dev environment",
+  "homepage": "https://github.com/cubetech/sofa.devinstall",
+  "authors": [
+    {
+      "name": "Christoph S. Ackermann",
+      "email": "christoph.ackermann@cubetech.ch",
+      "homepage": "https://github.com/acki"
+    }
+  ],
+  "keywords": [
+    "sofa", "cubetech", "wordpress", "stack", "composer", "devinstall", "wp", "dev"
+  ],
+  "support": {
+    "issues": "https://github.com/cubetech/sofa.devinstall/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "wp-cli/wp-cli": "1.0.0"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ],
+    "post-install-cmd": [
+	  "/bin/bash cubetech.sh"
+	]
+  }
+}
