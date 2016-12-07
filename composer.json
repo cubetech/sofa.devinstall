@@ -35,7 +35,7 @@
       "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
     ],
     "post-create-project-cmd": [
-	  "/bin/bash cubetech.sh"
+	  "/bin/bash vendor/cubetech/sofa.devinstall/cubetech.sh"
 	]
   }
 }
